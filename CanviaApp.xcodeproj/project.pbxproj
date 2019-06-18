@@ -12,6 +12,11 @@
 		8A5103A522B8647500F453EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5103A322B8647500F453EB /* Main.storyboard */; };
 		8A5103A722B8647600F453EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A5103A622B8647600F453EB /* Assets.xcassets */; };
 		8A5103AA22B8647600F453EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5103A822B8647600F453EB /* LaunchScreen.storyboard */; };
+		8A5103B222B86B7600F453EB /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5103B122B86B7600F453EB /* MenuTableViewCell.swift */; };
+		8A5103B422B86BD900F453EB /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5103B322B86BD900F453EB /* Menu.swift */; };
+		8A5103B922B86DE800F453EB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5103B822B86DE800F453EB /* Constants.swift */; };
+		8A5103BB22B8743300F453EB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5103BA22B8743300F453EB /* DetailViewController.swift */; };
+		8CA5124B402D3DB29D7D3030 /* Pods_CanviaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90C001D1F4CEC2E92D84042 /* Pods_CanviaApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,13 @@
 		8A5103A622B8647600F453EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A5103A922B8647600F453EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A5103AB22B8647600F453EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A5103B122B86B7600F453EB /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		8A5103B322B86BD900F453EB /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		8A5103B822B86DE800F453EB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8A5103BA22B8743300F453EB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A90C001D1F4CEC2E92D84042 /* Pods_CanviaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanviaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9C29215E69D6E342F759D6B /* Pods-CanviaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanviaApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanviaApp/Pods-CanviaApp.release.xcconfig"; sourceTree = "<group>"; };
+		E3A5FE9A7618B8AD0EAA8160 /* Pods-CanviaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanviaApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CanviaApp/Pods-CanviaApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CA5124B402D3DB29D7D3030 /* Pods_CanviaApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,8 @@
 			children = (
 				8A51039E22B8647500F453EB /* CanviaApp */,
 				8A51039D22B8647500F453EB /* Products */,
+				DECFA828EEB647508C5EFAA8 /* Pods */,
+				E3DBB7C29C9FD48EAF5D5D9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +69,59 @@
 		8A51039E22B8647500F453EB /* CanviaApp */ = {
 			isa = PBXGroup;
 			children = (
+				8A5103B722B86DD200F453EB /* Models */,
+				8A5103B622B86DCB00F453EB /* Controllers */,
+				8A5103B522B86DC300F453EB /* Utils */,
 				8A51039F22B8647500F453EB /* AppDelegate.swift */,
-				8A5103A122B8647500F453EB /* ViewController.swift */,
 				8A5103A322B8647500F453EB /* Main.storyboard */,
 				8A5103A622B8647600F453EB /* Assets.xcassets */,
 				8A5103A822B8647600F453EB /* LaunchScreen.storyboard */,
 				8A5103AB22B8647600F453EB /* Info.plist */,
 			);
 			path = CanviaApp;
+			sourceTree = "<group>";
+		};
+		8A5103B522B86DC300F453EB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8A5103B822B86DE800F453EB /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8A5103B622B86DCB00F453EB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8A5103B122B86B7600F453EB /* MenuTableViewCell.swift */,
+				8A5103A122B8647500F453EB /* ViewController.swift */,
+				8A5103BA22B8743300F453EB /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8A5103B722B86DD200F453EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A5103B322B86BD900F453EB /* Menu.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DECFA828EEB647508C5EFAA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3A5FE9A7618B8AD0EAA8160 /* Pods-CanviaApp.debug.xcconfig */,
+				D9C29215E69D6E342F759D6B /* Pods-CanviaApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E3DBB7C29C9FD48EAF5D5D9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A90C001D1F4CEC2E92D84042 /* Pods_CanviaApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A5103AE22B8647600F453EB /* Build configuration list for PBXNativeTarget "CanviaApp" */;
 			buildPhases = (
+				A98A6465552F40CFE523EFD0 /* [CP] Check Pods Manifest.lock */,
 				8A51039822B8647500F453EB /* Sources */,
 				8A51039922B8647500F453EB /* Frameworks */,
 				8A51039A22B8647500F453EB /* Resources */,
+				FB7010DDFDC26DC89D40D874 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +192,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A98A6465552F40CFE523EFD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CanviaApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB7010DDFDC26DC89D40D874 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CanviaApp/Pods-CanviaApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CanviaApp/Pods-CanviaApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8A51039822B8647500F453EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A5103B922B86DE800F453EB /* Constants.swift in Sources */,
 				8A5103A222B8647500F453EB /* ViewController.swift in Sources */,
 				8A5103A022B8647500F453EB /* AppDelegate.swift in Sources */,
+				8A5103BB22B8743300F453EB /* DetailViewController.swift in Sources */,
+				8A5103B422B86BD900F453EB /* Menu.swift in Sources */,
+				8A5103B222B86B7600F453EB /* MenuTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +389,12 @@
 		};
 		8A5103AF22B8647600F453EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3A5FE9A7618B8AD0EAA8160 /* Pods-CanviaApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CanviaApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,10 +408,12 @@
 		};
 		8A5103B022B8647600F453EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9C29215E69D6E342F759D6B /* Pods-CanviaApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CanviaApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
