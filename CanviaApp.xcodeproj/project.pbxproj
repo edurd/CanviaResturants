@@ -16,6 +16,7 @@
 		8A5103B422B86BD900F453EB /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5103B322B86BD900F453EB /* Menu.swift */; };
 		8A5103B922B86DE800F453EB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5103B822B86DE800F453EB /* Constants.swift */; };
 		8A5103BB22B8743300F453EB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5103BA22B8743300F453EB /* DetailViewController.swift */; };
+		8A5103BD22B8784100F453EB /* menu.json in Sources */ = {isa = PBXBuildFile; fileRef = 8A5103BC22B8784100F453EB /* menu.json */; };
 		8CA5124B402D3DB29D7D3030 /* Pods_CanviaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90C001D1F4CEC2E92D84042 /* Pods_CanviaApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		8A5103B322B86BD900F453EB /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		8A5103B822B86DE800F453EB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8A5103BA22B8743300F453EB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8A5103BC22B8784100F453EB /* menu.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		A90C001D1F4CEC2E92D84042 /* Pods_CanviaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanviaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9C29215E69D6E342F759D6B /* Pods-CanviaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanviaApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanviaApp/Pods-CanviaApp.release.xcconfig"; sourceTree = "<group>"; };
 		E3A5FE9A7618B8AD0EAA8160 /* Pods-CanviaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanviaApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CanviaApp/Pods-CanviaApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				8A5103A622B8647600F453EB /* Assets.xcassets */,
 				8A5103A822B8647600F453EB /* LaunchScreen.storyboard */,
 				8A5103AB22B8647600F453EB /* Info.plist */,
+				8A5103BC22B8784100F453EB /* menu.json */,
 			);
 			path = CanviaApp;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				8A5103A022B8647500F453EB /* AppDelegate.swift in Sources */,
 				8A5103BB22B8743300F453EB /* DetailViewController.swift in Sources */,
 				8A5103B422B86BD900F453EB /* Menu.swift in Sources */,
+				8A5103BD22B8784100F453EB /* menu.json in Sources */,
 				8A5103B222B86B7600F453EB /* MenuTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
